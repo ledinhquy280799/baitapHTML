@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+
+    <style>
+        h3 {
+            text-align: center;
+            color: #168000;
+        }
+
+        table, tr, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        table {
+            background-color: #90EE90;
+            width: 549px;
+            margin: 0 auto;
+        }
+
+        table tr:last-child td {
+            border: none;
+        }
+
+        table tr:nth-child(9) td {
+            text-align: center;
+        }
+
+        table tr td textarea {
+            width: 300px;
+        }
+
+        table tr td fieldset {
+            width: 350px;
+            height: 55px;
+        }
+
+        table tr td fieldset input {
+            width: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Đăng ký du lịch</h3>
+    <form action="">
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select name="" id="">
+                        <optgroup label="Miền Bắc">
+                            <option value="">Nha Trang - Đà Lạt</option>
+                            <option value="">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input type="radio"> Máy bay
+                    <input type="radio"> Ô tô
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Chọn sản phẩm tham gia</legend>
+                        Người lớn <input type="text">
+                        Trẻ em <input type="text">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea name="" id="" rows="5">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Đăng nhập</button></td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

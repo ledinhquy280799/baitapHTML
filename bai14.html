@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            text-align: center;
+            background-color: #2626ee;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2, div {
+            margin-left: 20px;
+        }
+
+        div {
+            color: #000;
+            font-weight: 700;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        table, tr, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        table tr td:last-child {
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Bài tập NGÔN NGỮ HTML</h1>
+    <table>
+        <tr>
+            <td>
+                <div id="links">
+                    <ul>
+                        <li><a href="./bai1.html">Bai 01 - Các tag cơ bản</a></li>
+                        <li><a href="./bai2.html">Bai 02 - Các tag cơ bản có định dạng</a></li>
+                        <li><a href="./bai3.html">Bai 03 - Định dạng trang web</a></li>
+                        <li><a href="./bai4.html">Bai 04 - Định dạng trang web (tt)</a></li>
+                        <li><a href="./bai5.html">Bai 05 - Định dạng văn bản</a></li>
+                        <li><a href="./bai6.html">Bai 06 - Định dạng văn bản (tt)</a></li>
+                        <li><a href="./bai7.html">Bai 07 - Hình ảnh, liên kết danh sách và ký tự đặc biệt</a></li>
+                        <li><a href="./bai8.html">Bai 08 - Tạo bảng</a></li>
+                        <li><a href="./bai9.html">Bai 09 - Tạo bảng, có trộn dòng và cột</a></li>
+                        <li><a href="./bai10.html">Bai 10 - Tạo bảng, có trộn dòng và cột (tt)</a></li>
+                        <li><a href="./bai11.html">Bai 11 - Tạo form và các điều khiển</a></li>
+                        <li><a href="./bai12.html">Bai 12 - Tạo form và các điều khiển (tt)</a></li>
+                        <li><a href="./bai13.html">Bai 13 - Tạo form và các điều khiển (tt)</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <h1>Bài 01: Sử dụng các tag cơ bản</h1>
+                <h2>Yêu cầu</h2>
+                <div>Thiết kế trang web có nội dung như sau</div>
+                <p>Lập trình Web <br><br>Chào mừng bạn đến với ngôn ngữ HTML</p>
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        // $(document).ready(function() {
+        //     $('#content').load('/bai1.html');
+
+        //     $('#links ul li a').click(function(e) {
+        //         e.preventDefault();
+        //         $("#content").load(e.target.href);
+        //     })
+        // });
+    </script>
+</body>
+</html>

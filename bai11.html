@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển trên form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        h3 {
+            color: #FFC01A;
+            text-align: center;
+        }
+
+        table {
+            background-color: #ADD8E6;
+            width: 330px;
+            margin: 0 auto;
+        }
+
+        table, tr, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(3) td {
+            text-align: center;
+        }
+
+        table tr:nth-child(4) td {
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Đăng nhập</h3>
+    <form action="">
+        <table>
+            <tr>
+                <td>Mã người dùng</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" id="click-me" onclick="getInputValue();">Đăng nhập</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="content"></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // document.getElementById('click-me').onclick = function(e) {
+        //     e.preventDefault();
+        //     var inputVal = document.getElementById("username").value;
+            
+        //     document.getElementById("content").innerHTML = inputVal;
+        // };
+        $("#click-me").click(function(e) {
+            e.preventDefault();
+            var inputVal = document.getElementById("username").value;
+            
+            document.getElementById("content").innerHTML = inputVal;
+        })
+        // function getInputValue(e) {
+        //     var inputVal = document.getElementById("username").value;
+            
+        //     document.getElementById("content").innerHTML = inputVal;
+        //     e.preventDefault();
+        // }
+    </script>
+</body>
+</html>
