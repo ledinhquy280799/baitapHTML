@@ -43,7 +43,7 @@
         <table>
             <tr>
                 <td>Mã người dùng</td>
-                <td><input type="text" id="username"></td>
+                <td><input type="text" id="username" value="default"></td>
             </tr>
             <tr>
                 <td>Mật khẩu</td>
@@ -54,33 +54,19 @@
                     <button type="submit" id="click-me" onclick="getInputValue();">Đăng nhập</button>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2">
-                    <p id="content"></p>
-                </td>
+            <tr id="content">
             </tr>
         </table>
     </form>
 
     <script>
-        // document.getElementById('click-me').onclick = function(e) {
-        //     e.preventDefault();
-        //     var inputVal = document.getElementById("username").value;
-            
-        //     document.getElementById("content").innerHTML = inputVal;
-        // };
+        
         $("#click-me").click(function(e) {
             e.preventDefault();
             var inputVal = document.getElementById("username").value;
             
-            document.getElementById("content").innerHTML = inputVal;
+            document.getElementById("content").innerHTML = '<td colspan="2"><p id="content">' + inputVal + '</p></td>';
         })
-        // function getInputValue(e) {
-        //     var inputVal = document.getElementById("username").value;
-            
-        //     document.getElementById("content").innerHTML = inputVal;
-        //     e.preventDefault();
-        // }
     </script>
 </body>
 </html>
